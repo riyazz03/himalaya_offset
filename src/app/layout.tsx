@@ -1,20 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-  title: "Himalaya Offset",
-  description: "Himalaya Offset",
+  title: "Himalaya Offset | Quality Visiting Cards, Banners & Wedding Cards",
+  description:
+    "Himalaya Offset offers premium printing services for visiting cards, banners, flyers, wedding cards, and more. Get vibrant, high-quality prints that make your brand or event stand out.",
 };
 
 export default function RootLayout({
@@ -24,9 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body style={{ fontFamily: "Helvetica, Arial, sans-serif" }}>
         {children}
       </body>
     </html>
